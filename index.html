@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS-WORD By Usama Jawaid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="name">
+        Usama Jawaid - MS Word 
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="radius font-family" id="fontFamily">
+                    <button>Font-Family</button>
+                </div>
+                <div>
+                    <button class="radius" id="inc">A+</button>
+                    <button class="radius" id="dec">A-</button>
+                </div>
+                <div class="radius">
+                    <button class="radius" id="case">Case</button>
+                </div>
+                <div class="radius">
+                    <button class="radius" id="clear">Clear</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="radius">
+                    <button id="b">B</button>
+                    <button id="i"><i>I</i></button>
+                    <button id="u">U</button>
+                </div>
+                <div class="colors">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="blue"></div>
+                    <div class="costume" id="text-color">
+                        
+                    </div>
+                </div>
+                <div class="colors">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="blue"></div>
+                    <div class="costume" id="bg-color">
+                        
+                    </div>
+                </div>
+                <div class="radius">
+                    <button class="radius" id="st">Strike Through</button>
+                </div>
+            </div>
+        </div>
+        <div class="container width">
+            <div class="row">
+                <div class="padding">
+                    <button id="r">
+                         </button>
+                </div>
+                <div class="padding" style="width: 40%;">
+                    <button id="c">-</button>
+                </div>
+                <div class="padding">
+                    <button id="l">></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="radius border">
+                    <button class="radius" id="borderr">Boder Coler</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contant">
+        <div class="input" id="inp">
+            <textarea id="textArea" cols="100" rows="10"></textarea>
+        </div>
+        <div class="watermark">
+            <span id="watermarkk"></span>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="count">
+            <div class="word" onclick="words()">
+                Total Words are <span id="word"></span>
+            </div>
+            <div class="letter" onclick="letters()">
+                Total letters are <span id="letter"></span>
+            </div>
+        </div>
+    </div>
+    <div class="footer1">
+        <div class="replace">
+            <div class="replacer" onclick="replace()">
+                Replace
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
