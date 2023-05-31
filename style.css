@@ -15,8 +15,11 @@ body {
     font-weight: lighter;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    padding: 10px 0;
+    text-align: left;
+    padding: 0;
+    margin-right: 2px;
+    position: fixed;
+    z-index: 1;
 }
 
 .main {
@@ -32,6 +35,7 @@ body {
     width: 50%;
     border: 1px solid black;
     padding: 20px;
+    margin-top: 50px;
     background-color: rgb(241 241 241);
 }
 

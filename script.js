@@ -1,30 +1,30 @@
-var textColorLink = document.getElementById("text-color");
-var bgColorLink = document.getElementById("bg-color");
-var fflink = document.getElementById("fontFamily");
-var sentence = document.getElementById("case");
-var finish = document.getElementById("clear");
-var bold = document.getElementById("b")
-var italic = document.getElementById("i")
-var under = document.getElementById("u")
-var strike = document.getElementById("st")
-var b = document.getElementById("borderr")
-var big = document.getElementById("inc")
-var small = document.getElementById("dec")
-var right = document.getElementById("r")
-var center = document.getElementById("c")
-var left = document.getElementById("l")
+let textColorLink = document.getElementById("text-color");
+let bgColorLink = document.getElementById("bg-color");
+let fflink = document.getElementById("fontFamily");
+let sentence = document.getElementById("case");
+let finish = document.getElementById("clear");
+let bold = document.getElementById("b")
+let italic = document.getElementById("i")
+let under = document.getElementById("u")
+let strike = document.getElementById("st")
+let b = document.getElementById("borderr")
+let big = document.getElementById("inc")
+let small = document.getElementById("dec")
+let right = document.getElementById("r")
+let center = document.getElementById("c")
+let left = document.getElementById("l")
 
-var workingArea = document.getElementById("textArea");
-var input = document.getElementById("inp");
+let workingArea = document.getElementById("textArea");
+let input = document.getElementById("inp");
 
 // Set the initial colors
-var textColor = "black";
-var bgColor = "white";
-var ff = "Arial";
-var s_c = "lower"
-var emp = "";
-var bc = "black"
-var fs = "14px"
+let textColor = "black";
+let bgColor = "white";
+let ff = "Arial";
+let s_c = "lower"
+let emp = "";
+let bc = "black"
+let fs = "14px"
 
 textColorLink.addEventListener("click", function () {
     textColor = prompt("Enter a new text color:");
@@ -81,23 +81,23 @@ left.addEventListener("click", function () {
     workingArea.style.textAlign = "left";
 });
 function words() {
-    var w = document.getElementById('word');
-    var text = workingArea.value;
-    var wordLength = text.split(" ")
+    let w = document.getElementById('word');
+    let text = workingArea.value;
+    let wordLength = text.split(" ")
     w.innerHTML = wordLength.length;
 }
 function letters() {
-    var l = document.getElementById('letter');
-    var letter = workingArea.value;
-    var Length = letter.split("")
+    let l = document.getElementById('letter');
+    let letter = workingArea.value;
+    let Length = letter.split("")
     l.innerHTML = Length.length;
 }
 function replace() {
-    var replaceLetter = prompt("Enter the letter to replace:");
-    var replacementLetter = prompt("Enter the replacement letter:");
+    let replaceLetter = prompt("Enter the letter to replace:");
+    let replacementLetter = prompt("Enter the replacement letter:");
 
 
-    var newText = workingArea.value.replaceAll(replaceLetter, replacementLetter);
+    let newText = workingArea.value.replaceAll(replaceLetter, replacementLetter);
 
     workingArea.value = newText;
 }
